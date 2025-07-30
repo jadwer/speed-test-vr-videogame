@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A-frame Script -->
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.0/dist/aframe-extras.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/aframe-physics-system@3.5.0/dist/aframe-physics-system.min.js"
+      defer
+    ></script>
+
+    <title>Videogame</title>
+  </head>
+  <body>
+    <a-scene background="color: #FAFAFA">
+        <a-assets>
+            <a-asset-item id="city" gltf src="assets/terrain/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#city" position="0 0 0" scale="1 1 1"></a-entity>
+    </a-scene>
+
+
+  </body>
+</html>
